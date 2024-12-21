@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Wheel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Deposit and Spin the Wheel</h1>
+      <div>
+        <label for="deposit">Deposit Amount:</label>
+        <input type="number" id="deposit" placeholder="Enter amount" />
+      </div>
+      <button onclick="spinWheel()">Spin Wheel</button>
+      <div id="wheel-container">
+        <div id="wheel">
+          <div id="percentage">0%</div>
+        </div>
+      </div>
+      <div id="bonus-container">
+        <p id="bonus-output">Bonus Amount: 0</p>
+        <p>Thank you for trusting play texa</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

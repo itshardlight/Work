@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://cdn.dribbble.com/users/361038/screenshots/8935297/media/9b365088e8dff00b7e3aabc04552c311.jpg?format=webp&resize=400x300&vertical=center");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Add transparency for better contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#wheel-container {
+  margin-top: 20px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #ddd;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #ff0000 0% 10%,
+    #ff9900 10% 20%,
+    #33cc33 20% 30%,
+    #3399ff 30% 40%,
+    #9900cc 40% 50%,
+    #ff0066 50% 60%,
+    #ff6600 60% 70%,
+    #6699cc 70% 80%,
+    #66cc66 80% 90%,
+    #ffcc00 90% 100%
+  );
+  transition: transform 3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#percentage {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+#bonus-container {
+  margin-top: 20px;
+  font-size: 18px;
+}
