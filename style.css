@@ -10,7 +10,7 @@ body {
 
 .container {
   text-align: center;
-  background-color: rgba(228, 228, 228, 0.187); /* Add transparency for better contrast */
+  background-color: rgba(228, 228, 228, 0.616); /* Add transparency for better contrast */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
