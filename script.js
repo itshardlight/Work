@@ -32,9 +32,9 @@ function spinWheel() {
   percentageElement.textContent = randomPercentage + "%";
 
   // Display the bonus and total amount
-  bonusOutputElement.textContent = `The bonus amount of ${deposit} is ${bonusAmount.toFixed(
+  bonusOutputElement.textContent = `Bonus amt: ${bonusAmount.toFixed(
     2
-  )}, total loading amount is ${totalAmount.toFixed(2)}.`;
+  )}, Loading amt is ${totalAmount.toFixed(2)}.`;
 
   // Add spin animation
   wheel.classList.add("spin");

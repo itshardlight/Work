@@ -10,14 +10,15 @@ body {
 
 .container {
   text-align: center;
-  background-color: rgb(
-    228,
-    228,
-    228
+  background-color: rgba(
+    241,
+    149,
+    149,
+    0.502
   ); /* Add transparency for better contrast */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(223, 201, 201, 0.1);
 }
 
 input[type="number"] {
@@ -35,6 +36,7 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 20px;
 }
 
 button:hover {
@@ -88,4 +90,11 @@ button:hover {
 }
 img {
   height: 200px;
+}
+#deposit {
+  width: 130px;
+  border-radius: 20px;
+}
+* {
+  font-family: cursive;
 }
