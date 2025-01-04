@@ -51,3 +51,14 @@ document.getElementById("deposit").addEventListener("click", function () {
   document.getElementById("percentage").textContent = "0%";
   document.getElementById("wheel").classList.remove("spin");
 });
+
+// Function to download the screenshot
+function downloadScreenshot() {
+  html2canvas(document.body).then(function (canvas) {
+    // Create a link element
+    const link = document.createElement("a");
+    link.download = "bonus-wheel-screenshot.png"; // Define the download file name
+    link.href = canvas.toDataURL(); // Convert canvas to base64 image
+    link.click(); // Trigger the download
+  });
+}
