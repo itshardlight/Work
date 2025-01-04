@@ -1,6 +1,6 @@
 /* Global styles */
 * {
-  font-family: "Poppins", sans-serif; /* More mobile-friendly font */
+  font-family: "Poppins", sans-serif; /* Cartoonish, mobile-friendly font */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,9 +14,9 @@ body {
   height: 100vh;
   background-image: linear-gradient(
     45deg,
-    rgb(0, 255, 76),
-    #ff9a9e
-  ); /* Gradient background */
+    #a8c0ff,
+    #ffdde1
+  ); /* Soft pastel gradient */
   background-size: cover;
   background-position: center;
   padding: 10px;
@@ -28,20 +28,20 @@ body {
     255,
     255,
     255,
-    0.9
-  ); /* Light background with transparency */
-  padding: 30px;
+    0.85
+  ); /* Light transparent background */
+  padding: 40px;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   color: #333; /* Dark text for readability */
-  border: 5px solid #ff6347; /* Bright border */
+  border: 5px solid #ffb3ba; /* Light border with soft pink */
   background: linear-gradient(
     135deg,
-    #84dde4,
-    #ff6347
-  ); /* Gradient for container */
+    #f7c1bb,
+    #b2e0ff
+  ); /* Soft pink to light blue gradient */
   width: 100%;
-  max-width: 400px; /* Limit max width for mobile screens */
+  max-width: 450px; /* Limit max width for mobile screens */
 }
 
 input[type="number"] {
@@ -49,20 +49,20 @@ input[type="number"] {
   margin-top: 15px;
   font-size: 16px;
   width: 100%;
-  border: 2px solid #ff6347;
+  border: 2px solid #ffb3ba;
   border-radius: 10px;
   background: linear-gradient(
     145deg,
-    #ffe600,
-    #ff9500
-  ); /* Gradient background for inputs */
+    #e3f2fd,
+    #b2e0ff
+  ); /* Light gradient for inputs */
   color: #ff6347;
 }
 
 input[type="number"]:focus {
   outline: none;
-  border-color: #ff4500; /* Focus border color */
-  background: linear-gradient(145deg, #ff6347, #ff4500); /* Focused gradient */
+  border-color: #ffb3ba; /* Focus border color */
+  background: linear-gradient(145deg, #ffb3ba, #e3f2fd); /* Focused gradient */
 }
 
 button {
@@ -70,9 +70,9 @@ button {
   font-size: 16px;
   background: linear-gradient(
     135deg,
-    #ff6347,
-    #ff4500
-  ); /* Gradient for button */
+    #b2e0ff,
+    #f7c1bb
+  ); /* Soft button gradient */
   color: white;
   border: none;
   cursor: pointer;
@@ -86,8 +86,8 @@ button {
 button:hover {
   background: linear-gradient(
     135deg,
-    #ff4500,
-    #ff6347
+    #f7c1bb,
+    #b2e0ff
   ); /* Reverse gradient on hover */
 }
 
@@ -97,7 +97,7 @@ button:hover {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 8px dashed #ff6347; /* Dashed border for cartoon effect */
+  border: 8px dashed #ffb3ba; /* Soft dashed border */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -109,16 +109,16 @@ button:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #ff6347 0% 10%,
-    #ff9900 10% 20%,
-    #32cd32 20% 30%,
-    #4682b4 30% 40%,
-    #8a2be2 40% 50%,
-    #ff4500 50% 60%,
-    #ff6347 60% 70%,
-    #daa520 70% 80%,
-    #ff69b4 80% 90%,
-    #ffd700 90% 100%
+    #f7c1bb 0% 10%,
+    #f0f8ff 10% 20%,
+    #b2e0ff 20% 30%,
+    #f0f8ff 30% 40%,
+    #ffb3ba 40% 50%,
+    #e3f2fd 50% 60%,
+    #f7c1bb 60% 70%,
+    #b2e0ff 70% 80%,
+    #ffdde1 80% 90%,
+    #f0f8ff 90% 100%
   );
   transition: transform 3s ease-out;
   display: flex;
@@ -135,15 +135,15 @@ button:hover {
 #bonus-container {
   margin-top: 30px;
   font-size: 22px;
-  color: #ff4500; /* Bright orange for emphasis */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for extra pop */
+  color: #f7c1bb; /* Soft pink emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for subtle pop */
 }
 
 img {
   height: 250px;
   border-radius: 15px;
   margin-top: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 #deposit {
@@ -151,9 +151,9 @@ img {
   border-radius: 50px;
   background: linear-gradient(
     135deg,
-    #ff9a9e,
-    #ff6347
-  ); /* Gradient for deposit button */
+    #ffdde1,
+    #b2e0ff
+  ); /* Light gradient for deposit button */
   color: white;
   font-size: 18px;
   padding: 12px;
@@ -166,8 +166,8 @@ img {
 #deposit:hover {
   background: linear-gradient(
     135deg,
-    #ff6347,
-    #ff9a9e
+    #b2e0ff,
+    #ffdde1
   ); /* Reverse gradient on hover */
 }
 
