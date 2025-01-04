@@ -1,6 +1,6 @@
 /* Global styles */
 * {
-  font-family: "Poppins", sans-serif; /* Cartoonish, mobile-friendly font */
+  font-family: "Poppins", sans-serif; /* Easy-to-read, friendly font */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,9 +14,9 @@ body {
   height: 100vh;
   background-image: linear-gradient(
     45deg,
-    #a8c0ff,
-    #ffdde1
-  ); /* Soft pastel gradient */
+    #6fa3ef,
+    #f7b7b7
+  ); /* Mild, balanced gradient */
   background-size: cover;
   background-position: center;
   padding: 10px;
@@ -29,19 +29,19 @@ body {
     255,
     255,
     0.85
-  ); /* Light transparent background */
+  ); /* Light background with opacity */
   padding: 40px;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   color: #333; /* Dark text for readability */
-  border: 5px solid #ffb3ba; /* Light border with soft pink */
+  border: 5px solid #ff6f61; /* Medium contrast border */
   background: linear-gradient(
     135deg,
-    #f7c1bb,
-    #b2e0ff
-  ); /* Soft pink to light blue gradient */
+    #f7c6c4,
+    #6fa3ef
+  ); /* Soft pink and light blue gradient */
   width: 100%;
-  max-width: 450px; /* Limit max width for mobile screens */
+  max-width: 450px;
 }
 
 input[type="number"] {
@@ -49,20 +49,24 @@ input[type="number"] {
   margin-top: 15px;
   font-size: 16px;
   width: 100%;
-  border: 2px solid #ffb3ba;
+  border: 2px solid #ff6f61;
   border-radius: 10px;
   background: linear-gradient(
     145deg,
-    #e3f2fd,
-    #b2e0ff
-  ); /* Light gradient for inputs */
-  color: #ff6347;
+    #ffcfcc,
+    #e0ecf8
+  ); /* Subtle input gradient */
+  color: #333;
 }
 
 input[type="number"]:focus {
   outline: none;
-  border-color: #ffb3ba; /* Focus border color */
-  background: linear-gradient(145deg, #ffb3ba, #e3f2fd); /* Focused gradient */
+  border-color: #ff6f61;
+  background: linear-gradient(
+    145deg,
+    #f7c6c4,
+    #e0ecf8
+  ); /* Slightly darker on focus */
 }
 
 button {
@@ -70,9 +74,9 @@ button {
   font-size: 16px;
   background: linear-gradient(
     135deg,
-    #b2e0ff,
-    #f7c1bb
-  ); /* Soft button gradient */
+    #ff6f61,
+    #f7c6c4
+  ); /* Balanced gradient for button */
   color: white;
   border: none;
   cursor: pointer;
@@ -86,8 +90,8 @@ button {
 button:hover {
   background: linear-gradient(
     135deg,
-    #f7c1bb,
-    #b2e0ff
+    #f7c6c4,
+    #ff6f61
   ); /* Reverse gradient on hover */
 }
 
@@ -97,7 +101,7 @@ button:hover {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 8px dashed #ffb3ba; /* Soft dashed border */
+  border: 8px dashed #ff6f61; /* Soft dashed border */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -109,16 +113,16 @@ button:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #f7c1bb 0% 10%,
-    #f0f8ff 10% 20%,
-    #b2e0ff 20% 30%,
-    #f0f8ff 30% 40%,
-    #ffb3ba 40% 50%,
-    #e3f2fd 50% 60%,
-    #f7c1bb 60% 70%,
-    #b2e0ff 70% 80%,
-    #ffdde1 80% 90%,
-    #f0f8ff 90% 100%
+    #ff6f61 0% 10%,
+    #ffbc77 10% 20%,
+    #77c4c1 20% 30%,
+    #7b7cf7 30% 40%,
+    #ff9bba 40% 50%,
+    #f2d7d5 50% 60%,
+    #ff6f61 60% 70%,
+    #78a9b8 70% 80%,
+    #c4d7ff 80% 90%,
+    #f2d7d5 90% 100%
   );
   transition: transform 3s ease-out;
   display: flex;
@@ -135,8 +139,8 @@ button:hover {
 #bonus-container {
   margin-top: 30px;
   font-size: 22px;
-  color: #f7c1bb; /* Soft pink emphasis */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for subtle pop */
+  color: #ff6f61; /* Focus on primary color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow effect */
 }
 
 img {
@@ -151,8 +155,8 @@ img {
   border-radius: 50px;
   background: linear-gradient(
     135deg,
-    #ffdde1,
-    #b2e0ff
+    #f7c6c4,
+    #6fa3ef
   ); /* Light gradient for deposit button */
   color: white;
   font-size: 18px;
@@ -166,8 +170,8 @@ img {
 #deposit:hover {
   background: linear-gradient(
     135deg,
-    #b2e0ff,
-    #ffdde1
+    #6fa3ef,
+    #f7c6c4
   ); /* Reverse gradient on hover */
 }
 
