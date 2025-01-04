@@ -13,11 +13,11 @@ function spinWheel() {
 
   // Bonus percentage logic based on deposit amount
   if (deposit >= 1 && deposit <= 10) {
-    randomPercentage = Math.floor(Math.random() * 30) + 1; // 1% to 30%
+    randomPercentage = Math.floor(Math.random() * 40) + 1; // 1% to 30%
   } else if (deposit > 10 && deposit <= 20) {
-    randomPercentage = Math.floor(Math.random() * 20) + 1; // 1% to 20%
+    randomPercentage = Math.floor(Math.random() * 30) + 1; // 1% to 20%
   } else if (deposit > 20 && deposit <= 30) {
-    randomPercentage = Math.floor(Math.random() * 10) + 1; // 1% to 10%
+    randomPercentage = Math.floor(Math.random() * 20) + 1; // 1% to 10%
   } else if (deposit > 30) {
     randomPercentage = 10; // 10% bonus for deposits above 30
   }
