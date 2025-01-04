@@ -1,43 +1,29 @@
 /* Global styles */
 * {
-  font-family: Arial, Helvetica, sans-serif; /* Cartoonish font */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
   margin: 0;
   padding: 0;
 }
 
 body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(
-    45deg,
-    #84fab0,
-    #8fd3f4
-  ); /* Soft gradient background */
+  background-image: url("https://example.com/cartoon-background.jpg"); /* Replace with a cartoon-themed background */
   background-size: cover;
   background-position: center;
 }
+
 .container {
   text-align: center;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Light background with transparency */
+  background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
   padding: 40px;
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   color: #333; /* Dark text for readability */
   border: 5px solid #ff6347; /* Bright border */
-  background: linear-gradient(
-    135deg,
-    #fff7e6,
-    #f68774
-  ); /* Gradient for container */
-  max-width: 90%; /* Add a max width for better control */
-  width: 400px; /* Ensure it's not too wide on large screens */
 }
 
 input[type="number"] {
@@ -45,45 +31,32 @@ input[type="number"] {
   margin-top: 15px;
   font-size: 18px;
   width: 220px;
-  border: 2px solid #ff6347;
+  border: 2px solid #ff6347; /* Bright border for inputs */
   border-radius: 10px;
-  background: linear-gradient(
-    145deg,
-    #ffe600,
-    #ff9500
-  ); /* Gradient background for inputs */
-  color: #ff6347;
+  background-color: #fff7e6; /* Light background */
+  color: #ff6347; /* Red text for inputs */
 }
 
 input[type="number"]:focus {
   outline: none;
   border-color: #ff4500; /* Focus border color */
-  background: linear-gradient(145deg, #ff6347, #ff4500); /* Focused gradient */
 }
 
 button {
   padding: 15px 30px;
   font-size: 18px;
-  background: linear-gradient(
-    135deg,
-    #ff6347,
-    #ff4500
-  ); /* Gradient for button */
+  background-color: #ff6347; /* Bright red button */
   color: white;
   border: none;
   cursor: pointer;
   margin-top: 25px;
-  border-radius: 50px;
-  transition: background 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50px; /* Round button */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background: linear-gradient(
-    135deg,
-    #ff4500,
-    #ff6347
-  ); /* Reverse gradient on hover */
+  background-color: #ff4500; /* Darker red on hover */
 }
 
 #wheel-container {
@@ -104,16 +77,9 @@ button:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #ff6347 0% 10%,
-    #ff9900 10% 20%,
-    #32cd32 20% 30%,
-    #4682b4 30% 40%,
-    #8a2be2 40% 50%,
-    #ff4500 50% 60%,
-    #ff6347 60% 70%,
-    #daa520 70% 80%,
-    #ff69b4 80% 90%,
-    #ffd700 90% 100%
+    #ff6347 0% 10%, #ff9900 10% 20%, #32cd32 20% 30%, 
+    #4682b4 30% 40%, #8a2be2 40% 50%, #ff4500 50% 60%, 
+    #ff6347 60% 70%, #daa520 70% 80%, #ff69b4 80% 90%, #ffd700 90% 100%
   );
   transition: transform 3s ease-out;
   display: flex;
@@ -144,11 +110,7 @@ img {
 #deposit {
   width: 160px;
   border-radius: 50px;
-  background: linear-gradient(
-    135deg,
-    #ff9a9e,
-    #ff6347
-  ); /* Gradient for deposit button */
+  background-color: #ff9900;
   color: white;
   font-size: 18px;
   padding: 12px;
@@ -158,72 +120,5 @@ img {
 }
 
 #deposit:hover {
-  background: linear-gradient(
-    135deg,
-    #ff6347,
-    #ff9a9e
-  ); /* Reverse gradient on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .container {
-    width: 90%; /* Adjust width for mobile */
-    padding: 20px;
-  }
-
-  input[type="number"] {
-    width: 100%; /* Make the input field take up full width */
-  }
-
-  button {
-    width: 100%; /* Make the button take up full width */
-    padding: 15px; /* Ensure button has adequate padding */
-    font-size: 18px; /* Ensure text size is readable */
-  }
-
-  #wheel-container {
-    width: 200px; /* Reduce wheel size on mobile */
-    height: 200px;
-  }
-
-  #deposit {
-    width: 100%; /* Make deposit button full width */
-  }
-
-  img {
-    width: 100%; /* Ensure image fits on mobile */
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    flex-direction: column; /* Stack elements vertically on small screens */
-  }
-
-  .container {
-    width: 95%; /* Reduce container size further */
-    padding: 15px;
-  }
-
-  input[type="number"] {
-    width: 100%; /* Full width for input */
-  }
-
-  button {
-    width: 100%; /* Full width for button */
-    padding: 15px; /* Make the button fit well */
-    font-size: 16px; /* Adjust text size for very small screens */
-  }
-
-  #wheel-container {
-    width: 180px; /* Even smaller wheel on very small screens */
-    height: 180px;
-  }
-
-  img {
-    width: 100%; /* Full width image */
-    height: auto; /* Maintain aspect ratio */
-  }
+  background-color: #e67e22; /* Darker orange on hover */
 }
