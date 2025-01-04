@@ -178,6 +178,8 @@ img {
 
   button {
     width: 100%; /* Make the button take up full width */
+    padding: 15px; /* Ensure button has adequate padding */
+    font-size: 18px; /* Ensure text size is readable */
   }
 
   #wheel-container {
@@ -211,6 +213,8 @@ img {
 
   button {
     width: 100%; /* Full width for button */
+    padding: 15px; /* Make the button fit well */
+    font-size: 16px; /* Adjust text size for very small screens */
   }
 
   #wheel-container {
