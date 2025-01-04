@@ -34,7 +34,7 @@ body {
   background: linear-gradient(
     135deg,
     #fff7e6,
-    #ff6347
+    #f68774
   ); /* Gradient for container */
   max-width: 90%; /* Add a max width for better control */
   width: 400px; /* Ensure it's not too wide on large screens */
