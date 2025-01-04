@@ -1,82 +1,75 @@
 /* Global styles */
 * {
-  font-family: "Poppins", sans-serif; /* Easy-to-read, friendly font */
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(
     45deg,
-    #6fa3ef,
-    #f7b7b7
-  ); /* Mild, balanced gradient */
+    #84fab0,
+    #8fd3f4
+  ); /* Soft gradient background */
   background-size: cover;
   background-position: center;
-  padding: 10px;
 }
-
 .container {
   text-align: center;
   background-color: rgba(
     255,
     255,
     255,
-    0.85
-  ); /* Light background with opacity */
+    0.9
+  ); /* Light background with transparency */
   padding: 40px;
   border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   color: #333; /* Dark text for readability */
-  border: 5px solid #ff6f61; /* Medium contrast border */
+  border: 5px solid #ff6347; /* Bright border */
   background: linear-gradient(
     135deg,
-    #f7c6c4,
-    #6fa3ef
-  ); /* Soft pink and light blue gradient */
-  width: 100%;
-  max-width: 450px;
+    #fff7e6,
+    #ff6347
+  ); /* Gradient for container */
+  max-width: 90%; /* Add a max width for better control */
+  width: 400px; /* Ensure it's not too wide on large screens */
 }
 
 input[type="number"] {
-  padding: 12px;
+  padding: 15px;
   margin-top: 15px;
-  font-size: 16px;
-  width: 100%;
-  border: 2px solid #ff6f61;
+  font-size: 18px;
+  width: 220px;
+  border: 2px solid #ff6347;
   border-radius: 10px;
   background: linear-gradient(
     145deg,
-    #ffcfcc,
-    #e0ecf8
-  ); /* Subtle input gradient */
-  color: #333;
+    #ffe600,
+    #ff9500
+  ); /* Gradient background for inputs */
+  color: #ff6347;
 }
 
 input[type="number"]:focus {
   outline: none;
-  border-color: #ff6f61;
-  background: linear-gradient(
-    145deg,
-    #f7c6c4,
-    #e0ecf8
-  ); /* Slightly darker on focus */
+  border-color: #ff4500; /* Focus border color */
+  background: linear-gradient(145deg, #ff6347, #ff4500); /* Focused gradient */
 }
 
 button {
-  padding: 12px 25px;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 18px;
   background: linear-gradient(
     135deg,
-    #ff6f61,
-    #f7c6c4
-  ); /* Balanced gradient for button */
+    #ff6347,
+    #ff4500
+  ); /* Gradient for button */
   color: white;
   border: none;
   cursor: pointer;
@@ -84,14 +77,13 @@ button {
   border-radius: 50px;
   transition: background 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  width: 100%;
 }
 
 button:hover {
   background: linear-gradient(
     135deg,
-    #f7c6c4,
-    #ff6f61
+    #ff4500,
+    #ff6347
   ); /* Reverse gradient on hover */
 }
 
@@ -101,7 +93,7 @@ button:hover {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 8px dashed #ff6f61; /* Soft dashed border */
+  border: 8px dashed #ff6347; /* Dashed border for cartoon effect */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -113,16 +105,16 @@ button:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #ff6f61 0% 10%,
-    #ffbc77 10% 20%,
-    #77c4c1 20% 30%,
-    #7b7cf7 30% 40%,
-    #ff9bba 40% 50%,
-    #f2d7d5 50% 60%,
-    #ff6f61 60% 70%,
-    #78a9b8 70% 80%,
-    #c4d7ff 80% 90%,
-    #f2d7d5 90% 100%
+    #ff6347 0% 10%,
+    #ff9900 10% 20%,
+    #32cd32 20% 30%,
+    #4682b4 30% 40%,
+    #8a2be2 40% 50%,
+    #ff4500 50% 60%,
+    #ff6347 60% 70%,
+    #daa520 70% 80%,
+    #ff69b4 80% 90%,
+    #ffd700 90% 100%
   );
   transition: transform 3s ease-out;
   display: flex;
@@ -139,15 +131,15 @@ button:hover {
 #bonus-container {
   margin-top: 30px;
   font-size: 22px;
-  color: #ff6f61; /* Focus on primary color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow effect */
+  color: #ff4500; /* Bright orange for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for extra pop */
 }
 
 img {
   height: 250px;
   border-radius: 15px;
   margin-top: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 #deposit {
@@ -155,57 +147,80 @@ img {
   border-radius: 50px;
   background: linear-gradient(
     135deg,
-    #f7c6c4,
-    #6fa3ef
-  ); /* Light gradient for deposit button */
+    #ff9a9e,
+    #ff6347
+  ); /* Gradient for deposit button */
   color: white;
   font-size: 18px;
   padding: 12px;
   border: none;
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
 #deposit:hover {
   background: linear-gradient(
     135deg,
-    #6fa3ef,
-    #f7c6c4
+    #ff6347,
+    #ff9a9e
   ); /* Reverse gradient on hover */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  body {
-    padding: 0;
-  }
-
+/* Responsive Styles */
+@media (max-width: 768px) {
   .container {
+    width: 90%; /* Adjust width for mobile */
     padding: 20px;
-    margin: 10px;
   }
 
-  input[type="number"],
-  button,
-  #deposit {
-    font-size: 16px;
+  input[type="number"] {
+    width: 100%; /* Make the input field take up full width */
+  }
+
+  button {
+    width: 100%; /* Make the button take up full width */
   }
 
   #wheel-container {
-    width: 200px;
-    height: 200px;
-  }
-
-  #percentage {
-    font-size: 40px;
-  }
-
-  img {
+    width: 200px; /* Reduce wheel size on mobile */
     height: 200px;
   }
 
   #deposit {
-    width: 100%;
+    width: 100%; /* Make deposit button full width */
+  }
+
+  img {
+    width: 100%; /* Ensure image fits on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .container {
+    width: 95%; /* Reduce container size further */
+    padding: 15px;
+  }
+
+  input[type="number"] {
+    width: 100%; /* Full width for input */
+  }
+
+  button {
+    width: 100%; /* Full width for button */
+  }
+
+  #wheel-container {
+    width: 180px; /* Even smaller wheel on very small screens */
+    height: 180px;
+  }
+
+  img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
   }
 }
