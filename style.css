@@ -1,55 +1,98 @@
+/* Global styles */
+* {
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  background-image: url("https://www.google.com/imgres?q=black%20friday&imgurl=https%3A%2F%2Fstatic.toiimg.com%2Fthumb%2Fmsid-105467124%2Cwidth-1070%2Cheight-580%2Cimgsize-89296%2Cresizemode-75%2Coverlay-toi_sw%2Cpt-32%2Cy_pad-40%2Fphoto.jpg&imgrefurl=https%3A%2F%2Ftimesofindia.indiatimes.com%2Feducation%2Flearning-with-toi%2Fblack-friday-do-you-know-why-this-day-is-celebrated-in-november%2Farticleshow%2F105467027.cms&docid=0MM2ZFQ3b_PcYM&tbnid=Bj7vleKv4WfrYM&vet=12ahUKEwiY3u7X2tiKAxW95TQHHaEPFv4QM3oECBgQAA..i&w=1069&h=580&hcb=2&ved=2ahUKEwiY3u7X2tiKAxW95TQHHaEPFv4QM3oECBgQAA");
+  background-image: linear-gradient(
+    45deg,
+    rgb(0, 255, 76),
+    #ff9a9e
+  ); /* Gradient background */
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
   text-align: center;
   background-color: rgba(
-    241,
-    149,
-    149,
-    0.502
-  ); /* Add transparency for better contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(223, 201, 201, 0.1);
+    255,
+    255,
+    255,
+    0.9
+  ); /* Light background with transparency */
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #333; /* Dark text for readability */
+  border: 5px solid #ff6347; /* Bright border */
+  background: linear-gradient(
+    135deg,
+    #84dde4,
+    #ff6347
+  ); /* Gradient for container */
 }
 
 input[type="number"] {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 16px;
-  width: 200px;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  width: 220px;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  background: linear-gradient(
+    145deg,
+    #ffe600,
+    #ff9500
+  ); /* Gradient background for inputs */
+  color: #ff6347;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #ff4500; /* Focus border color */
+  background: linear-gradient(145deg, #ff6347, #ff4500); /* Focused gradient */
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4caf50;
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(
+    135deg,
+    #ff6347,
+    #ff4500
+  ); /* Gradient for button */
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
-  border-radius: 20px;
+  margin-top: 25px;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: #45a049;
+  background: linear-gradient(
+    135deg,
+    #ff4500,
+    #ff6347
+  ); /* Reverse gradient on hover */
 }
 
 #wheel-container {
-  margin-top: 20px;
+  margin-top: 25px;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: 10px solid #ddd;
+  border: 8px dashed #ff6347; /* Dashed border for cartoon effect */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -61,16 +104,16 @@ button:hover {
   width: 100%;
   height: 100%;
   background: conic-gradient(
-    #ff0000 0% 10%,
+    #ff6347 0% 10%,
     #ff9900 10% 20%,
-    #33cc33 20% 30%,
-    #3399ff 30% 40%,
-    #9900cc 40% 50%,
-    #ff0066 50% 60%,
-    #ff6600 60% 70%,
-    #6699cc 70% 80%,
-    #66cc66 80% 90%,
-    #ffcc00 90% 100%
+    #32cd32 20% 30%,
+    #4682b4 30% 40%,
+    #8a2be2 40% 50%,
+    #ff4500 50% 60%,
+    #ff6347 60% 70%,
+    #daa520 70% 80%,
+    #ff69b4 80% 90%,
+    #ffd700 90% 100%
   );
   transition: transform 3s ease-out;
   display: flex;
@@ -85,16 +128,31 @@ button:hover {
 }
 
 #bonus-container {
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #ff4500; /* Bright orange for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for extra pop */
 }
+
 img {
-  height: 200px;
+  height: 250px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 #deposit {
-  width: 130px;
-  border-radius: 20px;
-}
-* {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 160px;
+  border-radius: 50px;
+  background: linear-gradient(
+    135deg,
+    #ff9a9e,
+    #ff6347
+  ); /* Gradient for deposit button */
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
